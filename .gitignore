@@ -1,0 +1,10 @@
+.gradle
+.idea
+out/
+silver.iml
+build/
+bin/
+.project
+.classpath
+.settings
+*.iml
