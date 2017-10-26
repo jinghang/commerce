@@ -1,0 +1,8 @@
+
+
+
+dependencies {
+    compile project(':commerce-repo')
+    compile project(':commerce-util')
+    compile "org.springframework:spring-context:5.0.0.RELEASE"
+}

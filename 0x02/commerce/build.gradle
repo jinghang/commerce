@@ -1,4 +1,5 @@
 
+
 allprojects{
     group='hang.commerce'
     version='0.0.1'
@@ -9,7 +10,10 @@ subprojects{
     sourceCompatibility=1.8
 
     repositories{
-        jcenter()
+        jcenter();
+        mavenCentral()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
     }
 
     dependencies{
@@ -19,7 +23,7 @@ subprojects{
     sourceSets{
         main{
             resources{
-                srcDir=['src/main/resources', 'src/main/java']
+                srcDirs=['src/main/resources', 'src/main/java']
             }
         }
     }

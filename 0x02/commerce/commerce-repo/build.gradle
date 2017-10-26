@@ -1,0 +1,4 @@
+
+dependencies {
+    compile "org.springframework:spring-context:5.0.0.RELEASE"
+}
