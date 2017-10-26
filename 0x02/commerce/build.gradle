@@ -1,0 +1,30 @@
+
+allprojects{
+    group='hang.commerce'
+    version='0.0.1'
+}
+
+subprojects{
+    apply plugin:'java'
+    sourceCompatibility=1.8
+
+    repositories{
+        jcenter()
+    }
+
+    dependencies{
+
+    }
+
+    sourceSets{
+        main{
+            resources{
+                srcDir=['src/main/resources', 'src/main/java']
+            }
+        }
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+}
